@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(./img/cold.jpg) no-repeat center/cover;
+}
+#weather{
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 20px 10px;
+    background: url(img/cold.jpg) no-repeat center/cover;
+}
+.hot{
+    background: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(./img/hot.png) no-repeat center/cover;
+}
+.hot #weather{
+    background: url(img/hot.png) no-repeat center/cover;
+}
+.cool{
+    background: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(./img/cool.jpg) no-repeat center/cover;
+}
+.cool #weather{
+    background: url(img/cool.jpg) no-repeat center/cover;
+}
+.warm{
+    background: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(./img/warm.jpg) no-repeat center/cover;
+}
+.warm #weather{
+    background: url(img/warm.jpg) no-repeat center/cover;
+}
+.search{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background:rgba(255,255,255,0.3);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.3);
+    transition: .4s;
+    color: #000;
+    font-size: 22px;
+}
+.search:focus{
+    background:rgba(255,255,255,0.6);
+    border-radius: 15px 0 15px 0;
+}
+.content{
+    text-align: center;
+    color: #fff;
+    margin:40px 0;
+    transition: .5s;
+}
+.capital{
+    text-shadow: 3px 4px rgba(0,0,0,0.3);
+}
+.time{
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+}
+.temperature{
+    font-size: 65px;
+    text-shadow: 3px 4px rgba(0,0,0,0.7);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: none;
+    margin: 0 30px;
+    padding: 20px;
+}
+.short-desc{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px rgba(0,0,0,0.3);
+    margin: 20px 0;
+}
+.more-desc{
+    display: flex;  
+    justify-content: space-between;
+}
+.more-desc div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.more-desc div i{
+    margin: 10px 0;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
